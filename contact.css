@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+.logo{
+  max-width: 20%;
+}
+body {
+  min-height: 100vh;
+  background: #000000;
+  overflow-x: hidden;
+}
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+}
+header ul {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+  text-align: center;
+  font-size: 25px;
+}
+header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #fff;
+  border-radius: 5px;
+}
+header ul li a.active {
+  color: rgb(3, 3, 3);
+  background: #fff;
+}
+header ul li a:hover {
+  color: rgb(3, 3, 3);
+  background: #fff;
+  transition: 1s background-color;
+}
+.contact-section {
+  top: 0;
+  transition: 1s;
+  padding: 100px 150px;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #fff;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+::placeholder {
+  color: #fff;
+}
+#msg {
+  height: 280px;
+  resize: none;
+  font-family: sans-serif;
+}
+.form-submit-btn {
+  background: #ff4f4f;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 15px 40px;
+  display: block;
+  margin: auto;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
